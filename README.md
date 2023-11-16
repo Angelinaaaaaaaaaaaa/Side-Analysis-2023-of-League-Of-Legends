@@ -1,2 +1,2 @@
-# Side-Analysis-2023-of-League-Of-Legends
+# Side-Analysis-of-League-Of-Legends-2023
 DSC80 project 3 by Angelina Zhang and Ziyu Huang
