@@ -1,7 +1,7 @@
 # Side-Analysis-of-League-Of-Legends-2023
 This is a DSC80 project of UCSD, and it involves tasks such as cleaning data, performing exploratory data analysis, assessing missingness, and conducting hypothesis tests. The results and insights from these analyses are presented on this website, serving as a comprehensive report of our findings.
 
-Creator: Angelina Zhang and Ziyu Huang
+Creators: Angelina Zhang and Ziyu Huang
 ## Introduction
 
 We choose the dataset documenting professional League of Legends games throughout 2023; each game, uniquely identified by a distinct gameid shown in the first column, is represented with ten rows delineating individual player data for competing teams and an additional two rows offering comprehensive team statistics. The dataset boasts 129264 rows and 123 columns with detailed information about each game. With such data, we want to investigate whether there is a correlation between the side of the team and the win rate (question: Would the side of the team affect the win rate?). Furthermore, our investigation extends to exploring potential associations between the identified side-dependent win rate and the nuanced disparities in resource allocation across the game map. The differences involve explicitly scrutinizing the variances in resources, such as those about baron, dragon, and herald objectives, to discern whether inherent map-related distinctions contribute to divergent team performances based on their designated sides. As a result, we added a new column, called `natural_resources,` dedicated to explicitly recording perceived resources, aiming to encapsulate the nuanced dynamics surrounding resource acquisition.
