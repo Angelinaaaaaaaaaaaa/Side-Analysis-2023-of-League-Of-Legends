@@ -55,13 +55,13 @@ We cleaned the data first by making a copy of the original dataset. Then we keep
 
 ### Univariate Analysis:
 
-<iframe src="Side-Analysis-of-League-Of-Legends-2023/assets/Winning_Sides_Distribution.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/Winning_Sides_Distribution.html" width=800 height=600 frameBorder=0></iframe>
 
 This pie chart shows the distribution of win rates for the red and blue sides, and we calculated them by separating the cleaned data into two sides and computing the win proportion for each. Two numbers add up to 100% because the total number of games for the red or blue side is the same. 
 
 ### Bivariate Analysis:
 
-<iframe src="Side-Analysis-of-League-Of-Legends-2023/assets/Side_Resources_Distribution.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/Side_Resources_Distribution.html" width=800 height=600 frameBorder=0></iframe>
 
 This bar chart shows the average resources allocated by the two sides after we imputed the missing data and calculated the data for the amount of natural resources.
 
@@ -119,4 +119,4 @@ This bar chart shows the average resources allocated by the two sides after we i
 | WLDs       |        242 |        26 |
 
 
-We aim to address the missingness in the columns `'golddiffat15'` and `'golddiffat10'`. To gain insights into the missingness patterns, we examine a pivot table of `'datamissingness'` grouped by league. The resulting table shows that missing values are present only in the leagues `LPL`, `LDL`, and `WLDs`. This observation suggests that the missingness may follow a pattern known as Not Missing at Random (NMAR).
+To gain insights into the missingness patterns, we examine a pivot table of `'datamissingness'` grouped by league. The resulting table shows that missing values are present only in the leagues `LPL`, `LDL`, and `WLDs`. This observation suggests that the missingness may follow a pattern known as Not Missing at Random (NMAR).
