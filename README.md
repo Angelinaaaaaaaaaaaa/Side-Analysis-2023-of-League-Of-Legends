@@ -32,6 +32,8 @@ Our analysis aims to shed light on the intricate dynamics and strategic implicat
 
 `‘heralds’` is the number of herald objectives secured by a team in the game
 
+`‘datacompleteness’` is the given completeness of each row in the original dataframe, which contains `complete` and  `partial`
+
 `‘gamelength_new’` is the length of a game and we convert the original `gamelength` into hours: minutes format
 
 `‘natural_resources’` we add this column after imputation to better showcase the relation between side and resources distribution, it contains the sum of `barons`, `dragons`, and `heralds`
@@ -53,12 +55,66 @@ We cleaned the data first by making a copy of the original dataset. Then we keep
 
 ### Univariate Analysis:
 
-
-<iframe src="assets/Winning_Sides_Distribution.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="Side-Analysis-of-League-Of-Legends-2023/assets/Winning_Sides_Distribution.html" width=800 height=600 frameBorder=0></iframe>
 
 This pie chart shows the distribution of win rates for the red and blue sides, and we calculated them by separating the cleaned data into two sides and computing the win proportion for each. Two numbers add up to 100% because the total number of games for the red or blue side is the same. 
 
 ### Bivariate Analysis:
-<iframe src="assets/Side_Resources_Distribution.html" width=800 height=600 frameBorder=0></iframe>
 
-This 
+<iframe src="Side-Analysis-of-League-Of-Legends-2023/assets/Side_Resources_Distribution.html" width=800 height=600 frameBorder=0></iframe>
+
+This bar chart shows the average resources allocated by the two sides after we imputed the missing data and calculated the data for the amount of natural resources.
+
+### Interesting Aggregates
+
+| league     |   complete |   partial |
+|:-----------|-----------:|----------:|
+| AL         |        346 |         0 |
+| CBLOL      |        484 |         0 |
+| CBLOLA     |        496 |         0 |
+| CDF        |        136 |         0 |
+| CT         |         86 |         0 |
+| DDH        |        172 |         0 |
+| EBL        |        318 |         0 |
+| EL         |         82 |         0 |
+| EM         |        542 |         0 |
+| EPL        |        172 |         0 |
+| ESLOL      |        604 |         0 |
+| GL         |        178 |         0 |
+| GLL        |        328 |         0 |
+| HC         |        282 |         0 |
+| HM         |        324 |         0 |
+| IC         |        134 |         0 |
+| LAS        |        504 |         0 |
+| LCK        |        974 |         0 |
+| LCKC       |       1010 |         0 |
+| LCO        |        280 |         0 |
+| LCS        |        528 |         0 |
+| LDL        |          0 |      1712 |
+| LEC        |        574 |         0 |
+| LFL        |        484 |         0 |
+| LFL2       |        498 |         0 |
+| LHE        |        118 |         0 |
+| LJL        |        516 |         0 |
+| LJLA       |        184 |         0 |
+| LLA        |        384 |         0 |
+| LMF        |        172 |         0 |
+| LPL        |          0 |      1510 |
+| LPLOL      |        320 |         0 |
+| LRN        |        232 |         0 |
+| LRS        |        238 |         0 |
+| LVP SL     |        492 |         0 |
+| MSI        |        152 |         0 |
+| NACL       |       1734 |         0 |
+| NEXO       |        338 |         0 |
+| NLC        |        314 |         0 |
+| PCS        |        586 |         0 |
+| PGN        |        402 |         0 |
+| PRM        |        484 |         0 |
+| SL (LATAM) |        180 |         0 |
+| TCL        |        360 |         0 |
+| UL         |        490 |         0 |
+| VCS        |        646 |         0 |
+| VL         |        176 |         0 |
+| WLDs       |        242 |        26 |
+We aim to address the missingness in the columns `'golddiffat15'` and `'golddiffat10'`. To gain insights into the missingness patterns, we examine a pivot table of `'datamissingness'` grouped by league. The resulting table shows that missing values are present only in the leagues `LPL`, `LDL`, and `WLDs`. This observation suggests that the missingness may follow a pattern known as Not Missing at Random (NMAR).
