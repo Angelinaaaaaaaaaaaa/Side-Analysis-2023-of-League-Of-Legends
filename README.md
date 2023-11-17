@@ -117,4 +117,6 @@ This bar chart shows the average resources allocated by the two sides after we i
 | VCS        |        646 |         0 |
 | VL         |        176 |         0 |
 | WLDs       |        242 |        26 |
+
+
 We aim to address the missingness in the columns `'golddiffat15'` and `'golddiffat10'`. To gain insights into the missingness patterns, we examine a pivot table of `'datamissingness'` grouped by league. The resulting table shows that missing values are present only in the leagues `LPL`, `LDL`, and `WLDs`. This observation suggests that the missingness may follow a pattern known as Not Missing at Random (NMAR).
