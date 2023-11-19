@@ -55,11 +55,14 @@ We cleaned the data first by making a copy of the original dataset. Then we keep
 
 ### Univariate Analysis:
 
+
+
+### Bivariate Analysis:
+
 <iframe src="assets/Winning_Sides_Distribution.html" width=800 height=600 frameBorder=0></iframe>
 
 This pie chart shows the distribution of win rates for the red and blue sides, and we calculated them by separating the cleaned data into two sides and computing the win proportion for each. Two numbers add up to 100% because the total number of games for the red or blue side is the same. Based on the observation, we guess that the Red team has better chance to win the game.
 
-### Bivariate Analysis:
 
 <iframe src="assets/Side_Resources_Distribution.html" width=800 height=600 frameBorder=0></iframe>
 
