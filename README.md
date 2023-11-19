@@ -131,24 +131,25 @@ To gain insights into the missingness patterns, we examine a pivot table of `'da
 
 ## Assessment of Missingness and Imputation
 
-In the analysis of Interesting Aggregates, we identified the potential occurrence of Not Missing at Random (NMAR). Upon examination of the table, it became apparent that the entries for `"LPL"` and `"LDL"` account for the majority of missing data and both leagues are located at China. Consequently, we proceeded to group the data into two groups: one comprising leagues from China and the other consisting of leagues not from China. The bar chart below shows the result of grouping:
+In the analysis of Interesting Aggregates, we identified the potential occurrence of Not Missing at Random (NMAR). Upon examination of the table, it became apparent that the entries for `"LPL"` and `"LDL"` account for the majority of missing data, and both leagues are located in China. Consequently, we proceeded to group the data into two groups: one comprising leagues from China and the other consisting of leagues not from China. The bar chart below shows the result of the grouping:
 
 <iframe src="assets/Missing_value_for_gold_at_10_and_15_min_and_heralds_vs_Region(China).html" width=800 height=600 frameBorder=0></iframe>
 
-The graph indicates a notable impact of leagues on the missing datas, which the majority of missing data are concentrated in China.
-### Permutation Test for missingness data
-We want to run a permutation test to suppport my assumption above  
+The graph indicates a notable impact of leagues on the missing data, the majority of which is concentrated in China, and we want to run a permutation test to support this assumption.  
 
+### Permutation Test for missingness data
 #### Null Hypothesis ($H_0$​):
 
-The Data is Not Missing At Random, and the missing data are depended on the leagues.
+The Data is Not Missing At Random, and the missing data is dependent on whether leagues are in China.
 
 #### Alternative Hypothesis ($H_1$​):
 
-The Data is Missing At Random
+The Data is Missing At Random.
 
 #### Test Statistic:
+
 We use the Total Variation Distance (TVD) to see the difference between the missing rate of the leagues in China and leagues not in China.
+
 #### Significance Level:
 
 We choose a significance level of α=0.05.
@@ -156,16 +157,22 @@ We choose a significance level of α=0.05.
 #### Resulting p-value: 
 
 p = 0.3116
+
 #### Conclusion:
 
-Given that the p-value is equal to 0.3116, which is greater than the chosen significance level of α=0.05, we reject the null hypothesis $H_0$ in favor of the alternative hypothesis $H_1$. This rejection signifies the correlations between missing data and leagues. Therefore, we have substantial evidence to believe that the Missing Data are not missing by random.
+With a p-value of 0.3116 obtained from the permutation test for missingness data, we fail to reject the null hypothesis. The evidence does not provide sufficient grounds to conclude that the missing data depends on whether leagues are in China. Therefore, based on the chosen significance level of α=0.05, we do not have statistically significant support for the alternative hypothesis, suggesting that the data is missing at random.
+
+The Total Variation Distance (TVD) was employed as the test statistic to measure the difference in missing rates between leagues in China and leagues not in China. The non-significant p-value suggests that any observed differences in missingness are likely due to random variation rather than a systematic pattern related to the location of leagues.
 
 <iframe src="assets/Empirical_Distribution_of_NMAR.html" width=800 height=600 frameBorder=0></iframe>
 
 ### Imputation
+
 Given that the missing data for "heralds" is considered part of the natural resources category, we will proceed with imputation to facilitate further analysis. 
+
 #### The method for imputation:
-In light of the absence of any available data on "heralds" in the LPL and LDL leagues, and recognizing the limitations for imputation, we have opted to randomly assign either 1 or 0 to the missing values. This approach is designed to minimize the impact of missingness on our subsequent analysis.
+
+In light of the absence of any available data on "heralds" in the LPL and LDL leagues and recognizing the limitations for imputation, we randomly assign 1 or 0 to the missing values. This approach is designed to minimize the impact of missingness on our subsequent analysis.
 
 
 
