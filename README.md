@@ -120,3 +120,29 @@ This bar chart shows the average resources allocated by the two sides after we i
 
 
 To gain insights into the missingness patterns, we examine a pivot table of `'datamissingness'` grouped by league. The resulting table shows that missing values are present only in the leagues `LPL`, `LDL`, and `WLDs`. This observation suggests that the missingness may follow a pattern known as Not Missing at Random (NMAR).
+
+
+
+
+## Assessment of Missingness
+
+
+<iframe src="assets/Missing_value_for_gold_at_10_and_15_min_and_heralds_vs_Region(China).html" width=800 height=600 frameBorder=0></iframe>
+
+## Hypothesis Testing
+
+### First hypothesis testing
+Null Hypothesis (H0​):
+The distribution of wins for the red-side teams is the same as the distribution of wins for the blue-side teams.
+Alternative Hypothesis (H1​):
+The distribution of wins for the red-side teams is different from the distribution of wins for the blue-side teams.
+Test Statistic: We use the Total Variation Distance (TVD) to see the difference between the win rates of the Red and Blue teams.
+Reasons: We chose TVD because we use categorical data and wonder if two sample distributions come from the same distribution.
+Significance Level:
+We choose a significance level of α=0.05.
+Resulting p-value: 
+p = 0
+Conclusion:
+Since p-value = 0 > alpha, we reject the null hypothesis H0 and favor the alternative hypothesis H1. This rejection implies a statistically significant difference in the distribution of wins between the Red and Blue side teams. Therefore, we have reason to believe that the team side (Red or Blue) is associated with different win rates, supporting the alternative hypothesis. Using Total Variation Distance (TVD) as the test statistic for categorical data was appropriate in capturing and quantifying this observed difference. It is essential to note that while we reject the null hypothesis, the test does not provide information on the specific nature of the difference or causation. Thereafter, we will run a Hypothesis testing to find out which side of the team is more likely to win the game.
+
+<iframe src="assets/Missing_value_for_gold_at_10_and_15_min_and_heralds_vs_Region(China).html" width=800 height=600 frameBorder=0></iframe>
