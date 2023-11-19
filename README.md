@@ -63,12 +63,12 @@ This histogram provides a visual representation of the distribution of game leng
 
 <iframe src="assets/Winning_Sides_Distribution.html" width=800 height=600 frameBorder=0></iframe>
 
-This pie chart shows the distribution of win rates for the red and blue sides, and we calculated them by separating the cleaned data into two sides and computing the win proportion for each. Two numbers add up to 100% because the total number of games for the red or blue side is the same. Based on the observation, we guess that the Red team has better chance to win the game.
+This pie chart shows the distribution of win rates for the red and blue sides, and we calculated them by separating the cleaned data into two sides and computing the win proportion for each. Two numbers add up to 100% because the total number of games for the red or blue side is the same. Based on the observation, we guess that the Red team has a better chance of winning the game.
 
 
 <iframe src="assets/Side_Resources_Distribution.html" width=800 height=600 frameBorder=0></iframe>
 
-This bar chart shows the average resources allocated by the two sides after we imputed the missing data and calculated the data for the amount of natural resources. The bar chart suggests that the Blue team is likely to acquire a greater amount of natural resources compared to the Red Team. We will conduct a hypothesis test to determine the validity of our assumption.
+This bar chart shows the average resources allocated by the two sides after we imputed the missing data and calculated the data for the amount of natural resources. The bar chart suggests that the Blue Team is likely to acquire more natural resources than the Red Team. We will conduct a hypothesis test to determine the validity of our assumption.
 
 ### Interesting Aggregates
 
@@ -125,7 +125,6 @@ This bar chart shows the average resources allocated by the two sides after we i
 
 
 To gain insights into the missingness patterns, we examine a pivot table of `'datamissingness'` grouped by league. The resulting table shows that missing values are present only in the leagues `LPL`, `LDL`, and `WLDs`. This observation suggests that the missingness may follow a pattern known as Not Missing at Random (NMAR).
-
 
 
 
