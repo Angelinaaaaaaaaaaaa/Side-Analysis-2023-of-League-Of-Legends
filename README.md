@@ -129,9 +129,10 @@ To gain insights into the missingness patterns, we examine a pivot table of `'da
 
 <iframe src="assets/Missing_value_for_gold_at_10_and_15_min_and_heralds_vs_Region(China).html" width=800 height=600 frameBorder=0></iframe>
 
-## Hypothesis Testing
+## Hypothesis Testing and Permutations
 
-### First hypothesis testing
+
+### First Permutation
 #### Null Hypothesis (H0​):
 
 The distribution of wins for the red-side teams is the same as the distribution of wins for the blue-side teams.
@@ -142,11 +143,7 @@ The distribution of wins for the red-side teams is different from the distributi
 
 #### Test Statistic: 
 
-We use the Total Variation Distance (TVD) to see the difference between the win rates of the Red and Blue teams.
-
-#### Reasons: 
-
-We chose TVD because we use categorical data and wonder if two sample distributions come from the same distribution.
+We use the Total Variation Distance (TVD) to see the difference between the win rates of the Red and Blue teams since we use categorical data and wonder if two sample distributions come from the same distribution.
 
 #### Significance Level:
 
@@ -158,6 +155,39 @@ p = 0
 
 #### Conclusion:
 
-Since p-value = 0 > alpha, we reject the null hypothesis H0 and favor the alternative hypothesis H1. This rejection implies a statistically significant difference in the distribution of wins between the Red and Blue side teams. Therefore, we have reason to believe that the team side (Red or Blue) is associated with different win rates, supporting the alternative hypothesis. Using Total Variation Distance (TVD) as the test statistic for categorical data was appropriate in capturing and quantifying this observed difference. It is essential to note that while we reject the null hypothesis, the test does not provide information on the specific nature of the difference or causation. Thereafter, we will run a Hypothesis testing to find out which side of the team is more likely to win the game.
+Given that the p-value is equal to 0, which is less than the chosen significance level of α=0.05, we reject the null hypothesis H0 in favor of the alternative hypothesis H1. This rejection signifies a statistically significant difference in the distribution of wins between the Red and Blue side teams. Therefore, we have substantial evidence to believe that the team side (Red or Blue) is associated with distinct win rates, supporting the alternative hypothesis.
+
+It's crucial to emphasize that while we reject the null hypothesis, the test, which utilizes Total Variation Distance (TVD) as the test statistic for categorical data, does not provide information regarding the specific nature of the observed difference or establish causation. It only serves as evidence that the win rates differ between the Red and Blue teams.
+
+A follow-up hypothesis test can be conducted to ascertain which team side is more likely to win the game. This additional analysis will provide deeper insights into the specific dynamics influencing the observed disparity in win rates between the two teams.
+
+<iframe src="assets/Empirical_Distribution_of_the_difference_in_the_Win_Rate.html" width=800 height=600 frameBorder=0></iframe>
+
+### Second Permutation
+#### Null Hypothesis (H0​):
+
+The  amount of natural resources of the Red team and the amount of natural resources of the Blue team are drawn from the same distribution.
+
+#### Alternative Hypothesis (H1​):
+
+The amount of natural resources of the blue team and the amount of natural resources of Red are drawn from different distributions.
+
+#### Test Statistic: 
+
+We use the mean difference to see the difference between the average natural resources of the red and blue teams since it is a valid measure to figure out if a difference in resource allocation exists for both sides.
+
+#### Significance Level:
+
+We choose a significance level of α=0.05.
+
+#### Resulting p-value: 
+
+p = 0
+
+#### Conclusion:
+
+With a p-value of 0 obtained from the second permutation test, we reject the null hypothesis (H0) that the number of natural resources of the Red and Blue teams are drawn from the same distribution. Our p-value suggests strong evidence favoring the alternative hypothesis (H1) that the amount of natural resources for the Red and Blue teams is drawn from different distributions.
+
+Therefore, based on the significance level of α=0.05, we conclude that there is a statistically significant difference in the average natural resources between the Red and Blue teams. This implies that the resource allocation for these two teams is likely to be distinct, and further investigation may be warranted to understand the underlying factors contributing to this difference.
 
 <iframe src="assets/Empirical_Distribution_of_the_difference_in_the_Win_Rate.html" width=800 height=600 frameBorder=0></iframe>
