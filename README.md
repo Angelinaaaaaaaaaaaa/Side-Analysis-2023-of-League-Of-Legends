@@ -1,5 +1,5 @@
 # Side-Analysis-of-League-Of-Legends-2023
-This is a DSC80 project of UCSD, and it involves tasks such as cleaning data, performing exploratory data analysis, assessing missingness, and conducting hypothesis tests. The results and insights from these analyses are presented on this website, serving as a comprehensive report of our findings.
+This DSC80 project of UCSD involves tasks such as cleaning data, performing exploratory data analysis, assessing missingness, and conducting hypothesis tests. The results and insights from these analyses are presented on this website, serving as a comprehensive report of our findings.
 
 Creators: Angelina Zhang and Ziyu Huang
 ## Introduction
@@ -124,12 +124,12 @@ To gain insights into the missingness patterns, we examine a pivot table of `'da
 
 
 
-## Assessment of Missingness
+## Assessment of Missingness and Imputation
 
 
 <iframe src="assets/Missing_value_for_gold_at_10_and_15_min_and_heralds_vs_Region(China).html" width=800 height=600 frameBorder=0></iframe>
 
-## Hypothesis Testing and Permutations
+## Hypothesis Testing and Permutation
 
 
 ### First Permutation
