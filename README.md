@@ -131,8 +131,6 @@ To gain insights into the missingness patterns, we examine a pivot table of `'da
 
 ## Hypothesis Testing
 
-
-
 ### First hypothesis testing
 #### Null Hypothesis (H0​):
 
