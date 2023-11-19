@@ -129,10 +129,26 @@ To gain insights into the missingness patterns, we examine a pivot table of `'da
 
 ## Assessment of Missingness and Imputation
 
+In the analysis of Interesting Aggregates, we identified the potential occurrence of Not Missing at Random (NMAR). Upon examination of the table, it became apparent that the entries for `"LPL"` and `"LDL"` account for the majority of missing data and both leagues are located at China. Consequently, we proceeded to group the data into two groups: one comprising leagues from China and the other consisting of leagues not from China. The bar chart below shows the result of grouping:
 
 <iframe src="assets/Missing_value_for_gold_at_10_and_15_min_and_heralds_vs_Region(China).html" width=800 height=600 frameBorder=0></iframe>
 
-Looking 
+The graph indicates a notable impact of leagues on the missing datas, which the majority of missing data are concentrated in China.
+### Permutation Test for missingness data
+We want to run a permutation test to suppport my assumption above 
+
+## Hypothesis Testing and Permutation 
+
+#### Null Hypothesis ($H_0$​):
+
+The Data is Not Missing At Random
+
+#### Alternative Hypothesis ($H_1$​):
+
+The Data is Missing At Random
+
+#### Test Statistic:
+
 
 ## Hypothesis Testing and Permutation
 
