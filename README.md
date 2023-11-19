@@ -55,7 +55,9 @@ We cleaned the data first by making a copy of the original dataset. Then we keep
 
 ### Univariate Analysis:
 
+<iframe src="assets/Length_of_Game.html" width=800 height=600 frameBorder=0></iframe>
 
+This histogram provides a visual representation of the distribution of game lengths, allowing one to observe patterns, central tendencies, and variability in the dataset.
 
 ### Bivariate Analysis:
 
