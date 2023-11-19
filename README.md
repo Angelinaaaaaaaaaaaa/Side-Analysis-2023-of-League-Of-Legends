@@ -137,19 +137,36 @@ In the analysis of Interesting Aggregates, we identified the potential occurrenc
 
 The graph indicates a notable impact of leagues on the missing datas, which the majority of missing data are concentrated in China.
 ### Permutation Test for missingness data
-We want to run a permutation test to suppport my assumption above 
-
-## Hypothesis Testing and Permutation 
+We want to run a permutation test to suppport my assumption above  
 
 #### Null Hypothesis ($H_0$​):
 
-The Data is Not Missing At Random
+The Data is Not Missing At Random, and the missing data are depended on the leagues.
 
 #### Alternative Hypothesis ($H_1$​):
 
 The Data is Missing At Random
 
 #### Test Statistic:
+We use the Total Variation Distance (TVD) to see the difference between the missing rate of the leagues in China and leagues not in China.
+#### Significance Level:
+
+We choose a significance level of α=0.05.
+
+#### Resulting p-value: 
+
+p = 0.3116
+#### Conclusion:
+
+Given that the p-value is equal to 0.3116, which is greater than the chosen significance level of α=0.05, we reject the null hypothesis $H_0$ in favor of the alternative hypothesis $H_1$. This rejection signifies the correlations between missing data and leagues. Therefore, we have substantial evidence to believe that the Missing Data are not missing by random.
+
+<iframe src="assets/" width=800 height=600 frameBorder=0></iframe>
+
+### Imputation
+Given that the missing data for "heralds" is considered part of the natural resources category, we will proceed with imputation to facilitate further analysis. 
+#### The method for imputation:
+In light of the absence of any available data on "heralds" in the LPL and LDL leagues, and recognizing the limitations for imputation, we have opted to randomly assign either 1 or 0 to the missing values. This approach is designed to minimize the impact of missingness on our subsequent analysis.
+
 
 
 ## Hypothesis Testing and Permutation
