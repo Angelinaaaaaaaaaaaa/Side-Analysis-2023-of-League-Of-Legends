@@ -14,7 +14,7 @@ Our analysis aims to shed light on the intricate dynamics and strategic implicat
 
 `‘result’` is `True` when the team won the game and `False` otherwise
 
-`‘gamelength’` is the total time taken to finish the game
+`‘gamelength’` is the total time taken to finish the game in second
 
 `‘league’` is the league to which the game belongs
 
@@ -32,7 +32,7 @@ Our analysis aims to shed light on the intricate dynamics and strategic implicat
 
 `‘heralds’` is the number of herald objectives secured by a team in the game
 
-`‘datacompleteness’` is the given completeness of each row in the original dataframe, which contains `complete` and  `partial`
+`‘datacompleteness’` is the given completeness of each row in the original dataframe, which contains `complete`, `ignore`, and  `partial`
 
 `‘gamelength_new’` is the length of a game and we convert the original `gamelength` into hours: minutes format
 
@@ -57,13 +57,13 @@ We cleaned the data first by making a copy of the original dataset. Then we keep
 
 <iframe src="assets/Winning_Sides_Distribution.html" width=800 height=600 frameBorder=0></iframe>
 
-This pie chart shows the distribution of win rates for the red and blue sides, and we calculated them by separating the cleaned data into two sides and computing the win proportion for each. Two numbers add up to 100% because the total number of games for the red or blue side is the same. 
+This pie chart shows the distribution of win rates for the red and blue sides, and we calculated them by separating the cleaned data into two sides and computing the win proportion for each. Two numbers add up to 100% because the total number of games for the red or blue side is the same. Based on the observation, we guess that the Red team has better chance to win the game.
 
 ### Bivariate Analysis:
 
 <iframe src="assets/Side_Resources_Distribution.html" width=800 height=600 frameBorder=0></iframe>
 
-This bar chart shows the average resources allocated by the two sides after we imputed the missing data and calculated the data for the amount of natural resources.
+This bar chart shows the average resources allocated by the two sides after we imputed the missing data and calculated the data for the amount of natural resources. The bar chart suggests that the Blue team is likely to acquire a greater amount of natural resources compared to the Red Team. We will conduct a hypothesis test to determine the validity of our assumption.
 
 ### Interesting Aggregates
 
@@ -128,6 +128,8 @@ To gain insights into the missingness patterns, we examine a pivot table of `'da
 
 
 <iframe src="assets/Missing_value_for_gold_at_10_and_15_min_and_heralds_vs_Region(China).html" width=800 height=600 frameBorder=0></iframe>
+
+Looking 
 
 ## Hypothesis Testing and Permutation
 
