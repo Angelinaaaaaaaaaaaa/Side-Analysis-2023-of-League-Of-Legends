@@ -161,9 +161,40 @@ Given that the p-value is equal to 0, which is less than the chosen significance
 
 It's crucial to emphasize that while we reject the null hypothesis, the test, which utilizes Total Variation Distance (TVD) as the test statistic for categorical data, does not provide information regarding the specific nature of the observed difference or establish causation. It only serves as evidence that the win rates differ between the Red and Blue teams.
 
-A follow-up hypothesis test can be conducted to ascertain which team side is more likely to win the game. This additional analysis will provide deeper insights into the specific dynamics influencing the observed disparity in win rates between the two teams.
+A follow-up hypothesis test is conducted to ascertain which team side is more likely to win the game. This additional analysis will provide deeper insights into the specific dynamics influencing the observed disparity in win rates between the two teams.
 
 <iframe src="assets/Empirical_Distribution_of_the_difference_in_the_Win_Rate.html" width=800 height=600 frameBorder=0></iframe>
+
+### First Hypothesis testing
+#### Null Hypothesis ($H_0$):
+
+The win rate of the Red team is equal to 0.5, suggesting no difference from a balanced win rate.
+
+#### Alternative Hypothesis ($H_1$​):
+
+The win rate of the Red team is greater than 0.5, indicating a tendency for the Red team to win more frequently.
+
+#### Test Statistic: 
+
+We will use the z-value as the test statistic to assess the deviation of the Red team's win rate from the hypothesized value.
+
+#### Significance Level:
+
+We choose a significance level of α=0.05, representing the probability of observing a result as extreme as the one obtained, assuming the null hypothesis is true.
+
+#### Resulting p-value: 
+
+p = 0
+
+#### Conclusion:
+The obtained p-value of 0, which is less than the chosen significance level (α=0.05), leads us to reject the null hypothesis that the win rate of the Red team is equal to 0.5. This rejection provides strong statistical evidence in favor of the alternative hypothesis, indicating that the win rate of the Red team is greater than 0.5.
+
+Therefore, based on the hypothesis test results, we have reason to believe that the Red team is more likely to win games than expected by chance. The statistical significance of this finding implies that the observed difference in win rates is unlikely to be due to random variability.
+
+It's important to note that while we have established a statistically significant difference, the test does not provide information on the magnitude of the difference or the specific factors influencing the win rates. Further analysis or investigations may be warranted to explore the practical significance and potential underlying reasons for the observed pattern in team performance.
+
+<iframe src="assets/Standard_Normal_Distribution.html" width=800 height=600 frameBorder=0></iframe>
+
 
 ### Second Permutation
 #### Null Hypothesis ($H_0$):
