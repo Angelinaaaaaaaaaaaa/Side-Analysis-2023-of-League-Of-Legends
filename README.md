@@ -160,7 +160,7 @@ p = 0.3116
 
 Given that the p-value is equal to 0.3116, which is greater than the chosen significance level of α=0.05, we reject the null hypothesis $H_0$ in favor of the alternative hypothesis $H_1$. This rejection signifies the correlations between missing data and leagues. Therefore, we have substantial evidence to believe that the Missing Data are not missing by random.
 
-<iframe src="assets/" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/Empirical_Distribution_of_NMAR.html" width=800 height=600 frameBorder=0></iframe>
 
 ### Imputation
 Given that the missing data for "heralds" is considered part of the natural resources category, we will proceed with imputation to facilitate further analysis. 
