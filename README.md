@@ -190,4 +190,4 @@ With a p-value of 0 obtained from the second permutation test, we reject the nul
 
 Therefore, based on the significance level of α=0.05, we conclude that there is a statistically significant difference in the average natural resources between the Red and Blue teams. This implies that the resource allocation for these two teams is likely to be distinct, and further investigation may be warranted to understand the underlying factors contributing to this difference.
 
-<iframe src="assets/Empirical_Distribution_of_the_difference_in_the_Win_Rate.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/Empirical_Distribution_of_the_difference_in_the_Natural_Resources.html" width=800 height=600 frameBorder=0></iframe>
