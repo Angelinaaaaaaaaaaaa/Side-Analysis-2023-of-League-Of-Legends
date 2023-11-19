@@ -133,11 +133,11 @@ To gain insights into the missingness patterns, we examine a pivot table of `'da
 
 
 ### First Permutation
-#### Null Hypothesis (H0​):
+#### Null Hypothesis ($H_0$​):
 
 The distribution of wins for the red-side teams is the same as the distribution of wins for the blue-side teams.
 
-#### Alternative Hypothesis (H1​):
+#### Alternative Hypothesis ($H_1$​):
 
 The distribution of wins for the red-side teams is different from the distribution of wins for the blue-side teams.
 
@@ -164,11 +164,11 @@ A follow-up hypothesis test can be conducted to ascertain which team side is mor
 <iframe src="assets/Empirical_Distribution_of_the_difference_in_the_Win_Rate.html" width=800 height=600 frameBorder=0></iframe>
 
 ### Second Permutation
-#### Null Hypothesis (H0​):
+#### Null Hypothesis ($H_0$​):
 
 The  amount of natural resources of the Red team and the amount of natural resources of the Blue team are drawn from the same distribution.
 
-#### Alternative Hypothesis (H1​):
+#### Alternative Hypothesis ($H_1$​):
 
 The amount of natural resources of the blue team and the amount of natural resources of Red are drawn from different distributions.
 
