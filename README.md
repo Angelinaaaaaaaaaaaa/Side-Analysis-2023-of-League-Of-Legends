@@ -32,7 +32,7 @@ Our analysis aims to shed light on the intricate dynamics and strategic implicat
 
 `‘heralds’` is the number of herald objectives secured by a team in the game
 
-`‘datacompleteness’` is the given completeness of each row in the original dataframe, which contains `complete`, `ignore`, and  `partial`
+`‘datacompleteness’` is the given completeness of each row in the original dataframe, which contains `complete`, and  `partial`
 
 `‘gamelength_new’` is the length of a game and we convert the original `gamelength` into hours: minutes format
 
